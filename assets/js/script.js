@@ -183,14 +183,14 @@ function renderWeather(city, weather){
     };
 
     function SearchForm(a){
-        if(!searchInput.value){
+        if(!formInput.value){
             return;
         }
 
         a.preventDefault();
-        var search = searchInput.value.trim();
+        var search = formInput.value.trim();
         fetchCoordinates(search);
-        searchInput.value = '';
+        formInput.value = '';
     };
 
     function SearchHistoryClick(a){
