@@ -17,12 +17,12 @@
             <div class="card">
                 <h3 class="card-header">Search for a City</h3>
                 <form id="user-form" class="card-body">
-                    <input name="usercity" id="usercity" type="text" autofocus="true" class="form-input" placeholder="City Name"></input>
-                    <button type="submit" class="btn">Search</button>
+                    <input  id="usercity" type="text" class="form-input" placeholder="City Name" aria-controls="today forecast"></input>
+                    <button type="submit" class="btn search-button" id="search-button">Search</button>
                 </form>
             </div>
 
-            <div class="card" id="history"></div>
+            <div class="card" id="Record"></div>
         </div>
 
         <div class="col-12 col-md-8">
@@ -33,6 +33,9 @@
 
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js" integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/script.js"></script>
     
 </body>
